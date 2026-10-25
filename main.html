@@ -1,1 +1,116 @@
-<div></div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madison Esports</title>
+  <meta name="description" content="Madison Esports — collegiate and community esports in Madison, WI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="32" height="32" rx="9" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M9 23V11l8 8 8-8v12" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Madison Esports</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero: the headline lifts and blurs away while the rings open up -->
+    <section id="top" class="scene scene-hero" data-scene="hero">
+      <div class="sticky">
+        <div class="rings" aria-hidden="true">
+          <div class="ring ring-lg"></div>
+          <div class="ring ring-sm"></div>
+          <div class="orbit"><div class="orbit-spin"><span class="orbit-dot"></span></div></div>
+        </div>
+
+        <div class="container hero-content">
+          <p class="eyebrow eyebrow-dot rise r1">
+            <span class="dot pulse"></span>
+            Collegiate &amp; community esports · Madison, WI
+          </p>
+          <h1 class="hero-title rise r2">
+            Play with <em>intent.</em><br>
+            Compete <em class="accent">together.</em>
+          </h1>
+          <div class="hero-rule draw" aria-hidden="true"></div>
+          <p class="lede rise r3">Madison Esports is home to competitive rosters, casual nights and a community of players across the city. [ONE-LINE MISSION STATEMENT]</p>
+        </div>
+
+        <div class="scroll-cue rise r4" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="scroll-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Statement: each word lights up as you scroll -->
+    <section class="scene scene-statement" data-scene="statement">
+      <div class="sticky">
+        <div class="container">
+          <p class="statement" id="statement">More than a scoreboard. We are a home for <em>competitive rosters,</em> late-night lobbies and everyone in Madison who loves to <em class="accent">play.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Games: vertical scroll drives a horizontal glide -->
+    <section class="scene scene-games" data-scene="games">
+      <div class="sticky">
+        <div class="container games-head">
+          <p class="eyebrow">What we play</p>
+          <p class="games-count"><span id="game-index">01</span> / <span id="game-total">06</span></p>
+        </div>
+        <div class="games-track" id="games-track">
+          <div class="game"><span class="game-num">01</span><p class="game-name">Valorant</p></div>
+          <div class="game"><span class="game-num">02</span><p class="game-name">League of Legends</p></div>
+          <div class="game"><span class="game-num">03</span><p class="game-name">Rocket League</p></div>
+          <div class="game"><span class="game-num">04</span><p class="game-name">Overwatch 2</p></div>
+          <div class="game"><span class="game-num">05</span><p class="game-name">Super Smash Bros.</p></div>
+          <div class="game"><span class="game-num">06</span><p class="game-name">Apex Legends</p></div>
+        </div>
+        <div class="container">
+          <div class="games-bar" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Finale: the wordmark tightens and settles into place -->
+    <section class="scene scene-outro" data-scene="outro">
+      <div class="sticky">
+        <div class="outro-ring" aria-hidden="true"></div>
+        <div class="outro-content">
+          <p class="wordmark">Madison <em>Esports</em></p>
+          <p class="outro-tag">See you in the lobby.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Madison Esports · [CONTACT EMAIL]</p>
+      <nav aria-label="Social">
+        <a href="#top">Discord</a>
+        <a href="#top">Twitch</a>
+        <a href="#top">Instagram</a>
+        <a href="#top">X</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
